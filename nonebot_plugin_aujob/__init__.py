@@ -30,7 +30,7 @@ async def _(matcher: Matcher, event: MessageEvent):
     if plain_text in dict_character:
         msg = dict_character[plain_text]
     else:
-        msg = "命令或职业不存在，请发送 /auhelp 查看全部的职业名称"
+        msg = "命令或职业不存在，请发送\n/auhelp\n查看全部的职业名称"
     await matcher.finish(msg)
 
 
