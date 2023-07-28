@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nonebot_plugin_aujob"
+version = "0.0.6"
+authors = [
+  { name="qwqZYLqwq", email="3422471182@qq.com" },
+]
+description = "A nonebot plugin"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "nonebot2>=2.0.0",
+    "nonebot-adapter-onebot>=2.0.0"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/qwqZYLqwq/nonebot-plugin-aujob"
+"Bug Tracker" = "https://github.com/qwqZYLqwq/nonebot-plugin-aujob/issues"
