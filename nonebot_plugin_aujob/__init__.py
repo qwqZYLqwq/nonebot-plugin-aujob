@@ -1,7 +1,6 @@
 from nonebot.plugin import PluginMetadata
 from nonebot import on_keyword
 from nonebot.adapters.onebot.v11 import Message
-from .config import Config
 
 __plugin_meta__ = PluginMetadata(
     name="{Among US中的TOH模组职业介绍}",
