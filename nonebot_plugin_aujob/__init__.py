@@ -3,18 +3,18 @@ from nonebot import on_keyword
 from nonebot.adapters.onebot.v11 import Message
 
 __plugin_meta__ = PluginMetadata(
-    name="{Among US中的TOH模组职业介绍}",
-    description="{查询TOH模组里职业的玩法描述}",
-    usage="{输入.t加职业名可以查看职业的玩法}",
+    name="Among US中的TOH模组职业介绍",
+    description="查询TOH模组里职业的玩法描述",
+    usage="输入.t加职业名可以查看职业的玩法",
 
-    type="{application}",
+    type="application",
     # 发布必填，当前有效类型有：`library`（为其他插件编写提供功能），`application`（向机器人用户提供功能）。
 
-    homepage="{https://github.com/qwqZYLqwq/nonebot-plugin-aujob}",
+    homepage="https://github.com/qwqZYLqwq/nonebot-plugin-aujob",
     # 发布必填。
 
 
-    supported_adapters={"~onebot.v11", "~telegram"},
+    supported_adapters={"~onebot.v11"},
     # 支持的适配器集合，其中 `~` 在此处代表前缀 `nonebot.adapters.`，其余适配器亦按此格式填写。
     # 若插件可以保证兼容所有适配器（即仅使用基本适配器功能）可不填写，否则应该列出插件支持的适配器。
 )
