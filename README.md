@@ -56,4 +56,6 @@ Among Us 中TOH模组的职业描述
 
 ### 效果图
 
-待上传
+![res2](https://github.com/qwqZYLqwq/nonebot-plugin-aujob/blob/main/res2.png?raw=true)
+
+![res1](https://github.com/qwqZYLqwq/nonebot-plugin-aujob/blob/main/res1.png?raw=true)
