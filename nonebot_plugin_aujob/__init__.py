@@ -1,7 +1,7 @@
 from nonebot.internal.matcher import Matcher
 from nonebot.plugin import PluginMetadata
 from nonebot import on_startswith
-from nonebot.adapters.onebot.v11 import MessageEvent
+from nonebot.adapters import Event
 
 from .utils import dict_character, dict_else
 
@@ -12,8 +12,10 @@ __plugin_meta__ = PluginMetadata(
     type="application",
     # 发布必填，当前有效类型有：`library`（为其他插件编写提供功能），`application`（向机器人用户提供功能）。
     homepage="https://github.com/qwqZYLqwq/nonebot-plugin-aujob",
-    # 发布必填。
-    #supported_adapters={"~onebot.v11"},
+    # 发布必填
+
+
+    #supported_adapters={"null"},
     # 支持的适配器集合，其中 `~` 在此处代表前缀 `nonebot.adapters.`，其余适配器亦按此格式填写。
     # 若插件可以保证兼容所有适配器（即仅使用基本适配器功能）可不填写，否则应该列出插件支持的适配器。
 )
@@ -23,7 +25,7 @@ matcher_character = on_startswith(".t ", ignorecase=True, priority=10, block=Tru
 
 
 @matcher_character.handle()
-async def _(matcher: Matcher, event: MessageEvent):
+async def _(matcher: Matcher, event: Event):
     """角色资料菜单"""
     plain_text = event.get_message().extract_plain_text().strip()
     plain_text = plain_text.replace(".t ", "")
