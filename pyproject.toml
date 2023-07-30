@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "nonebot_plugin_aujob"
-version = "0.1.4"
+version = "0.2.114514"
 authors = [
   { name="qwqZYLqwq", email="3422471182@qq.com" },
 ]
